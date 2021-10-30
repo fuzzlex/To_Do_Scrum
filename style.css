@@ -2,38 +2,145 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color:rgb(151, 43, 128);
 }
 .container{
     height: 100vh;
-    background-color: rgb(130, 59, 197);
+    background: linear-gradient(rgba(15,15,15,0.5));
     overflow: auto;
 }
 
 .header{
-    position: relative;
-    margin: 3%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
  }
  .header h1{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    margin:1rem ;
 }
 .timer{
-    position: absolute;
-    right: 0;
+    margin: 1rem;
 }
 
 .inputs{
     display: flex;
-    align-items: center;
     justify-content: space-around;
+
+}
+.inputs label{
+    font-size: 1rem;
+}
+.inputs input{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 2rem 2rem 0 0;
+    text-indent: 1.5rem;
+    margin: 1rem 0;
+}
+.inputs button{
+    width: 10rem;
+    justify-content: center;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 2rem 2rem 0 0;
+    margin: -0.5rem 0;
+    margin-top: 0.5rem;
+    background-color: blueviolet;
+    color: aliceblue;
 }
 .main-target{
-    display: flex;
-    flex-direction: column;
+display:flex;
+flex-direction: column;
+align-items: center;
+ 
 }
 .part-target{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+.checkboxer{
+    
+    max-width: 25rem;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 2rem;
+    margin: 1rem;
+    position: relative;
+    border-bottom: 2px solid rgb(174, 0, 255);
+    top: 0;
+    left: 0;
+    
+ 
+ }
+ 
+ .fa-thumbs-up{
+ 
+ margin: 0.3rem 0.5rem;
+ cursor: pointer;
+ border: 2px solid orange;
+ border-radius: 50%;
+ padding: 0.6rem;
+ font-size: 0.9rem;
+ color:rgb(210, 66, 30);
+ 
+ }
+ 
+ .checkboxer label{
+     width: 12rem;
+     font-weight: 900;
+     word-wrap: break-word;
+ 
+ }
+ .checkboxer img{
+ 
+     position: absolute;
+     right: -2rem;
+     border: none;
+     border-radius: 0 1rem 0 ;
+     cursor: pointer;
+     padding: 0 0.5rem;
+    
+ 
+ }
+ .complated{
+     text-decoration: line-through;
+     color: rgb(174, 0, 255);
+     transform: rotateY(-360deg);
+     transition: .5s;
+ }
+ .changed1{
+     background-color: rgba(153, 0, 255,0.4);
+     transition: background-color 2s;
+     cursor: pointer;
+
+ }
+ .changed2{
+ 
+ display: none; 
+ }
+ .changed3{
+  
+    left: 30rem ;
+    transition:left 1s;
+
+ }
+ .changed4{
+  
+    left: 50rem ;
+    transition:left 1s;
+
+ }
+ .two{
+    margin: 0.3rem 0.5rem;
+    cursor: pointer;
+    border: 2px solid orange;
+    border-radius: 50%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    color:rgb(210, 66, 30);
+ }
+
