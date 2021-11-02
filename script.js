@@ -7,12 +7,7 @@ let linediv = document.querySelector(".linediv")
 
 
 addEl.addEventListener("click", ()=>{
-    loader1(); 
- 
-    
- 
- 
-  
+    loader1();  
 }); 
 
 function loader1() {
@@ -21,8 +16,9 @@ let sontext = inputText1.toUpperCase();
 main_target.innerHTML += 
 `<div  class="checkboxer"> 
 
-<i class="far fa-thumbs-up">Doing>>></i>
+<i class="one fas fa-check-circle"></i>
 <label class="okey" >${sontext}</label> 
+<i class="two fas fa-check-double"></i>
 <img class="delete" src="delete.svg" alt="">
 
  
@@ -43,24 +39,30 @@ main_target.addEventListener('click', (a) => {
 });
 
 main_target.addEventListener('click', (a) => {
-    if (a.target.classList.contains('fa-thumbs-up') ) {
+    let date = new Date();
+    if (a.target.classList.contains('one') ) {
         a.target.classList.toggle("changed1")
         a.target.parentElement.classList.toggle("changed3"); 
-        a.target.parentElement.innerHTML += `<i class="two">Done>>></i>`
+        a.target.parentElement.innerHTML += `<p class="dates">Start time ${setTimer(date.getHours())} : ${setTimer(date.getMinutes())}`
        
        }
 
 });
 main_target.addEventListener('click', (a) => {
+    let date = new Date();
     if (a.target.classList.contains('two')) {
      a.target.parentElement.classList.toggle("changed4");  
-     a.target.classList.toggle("changed1")  
-     a.target.addEventListener
+     a.target.classList.toggle("changed1")  ;
+     a.target.parentElement.innerHTML += `<p class="dates2">Finish time ${setTimer(date.getHours())} : ${setTimer(date.getMinutes())}</p>`
+
    
        }
 
 });
-
+function setTimer(date) {
+    if(date < 10){ date = "0" + date; return date;}
+    else return date;
+}
 
 
 

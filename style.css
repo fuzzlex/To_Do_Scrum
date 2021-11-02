@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Ubuntu:wght@300;700&family=Zen+Kurenaido&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color:rgb(151, 43, 128);
+    color:rgb(0, 0, 0);
+  
 }
 .container{
     height: 100vh;
@@ -18,6 +20,7 @@
  }
  .header h1{
     margin:1rem ;
+    font-family: 'Fruktur', cursive;
 }
 .timer{
     margin: 1rem;
@@ -32,22 +35,23 @@
     font-size: 1rem;
 }
 .inputs input{
-    width: 15rem;
-    height: 2.5rem;
+    width: 140%;
+    height: 85%;
     border-radius: 2rem 2rem 0 0;
     text-indent: 1.5rem;
-    margin: 1rem 0;
+    margin: 8% 0;
 }
 .inputs button{
-    width: 10rem;
+    width: 90%;
     justify-content: center;
     height: 2rem;
     cursor: pointer;
     border-radius: 2rem 2rem 0 0;
-    margin: -0.5rem 0;
     margin-top: 0.5rem;
-    background-color: blueviolet;
-    color: aliceblue;
+    background-color: rgba(54, 0, 250,0.5);
+    color: rgb(255, 255, 255);
+    margin-left: 35%;
+    font-weight: 900;
 }
 .main-target{
 display:flex;
@@ -62,44 +66,50 @@ align-items: center;
 }
 .checkboxer{
     
-    max-width: 25rem;   
+    max-width: 25%;   
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color:rgb(236, 83, 83);
     border-radius: 2rem;
-    margin: 1rem;
+    margin: 1.7rem;
     position: relative;
-    border-bottom: 2px solid rgb(174, 0, 255);
+    border-bottom: 2px solid rgb(0, 0, 0);
     top: 0;
-    left: 0;
-    
+    left: 7%;
+    font-family: 'Ubuntu', sans-serif;
+
+
  
  }
  
- .fa-thumbs-up{
+ .one{
  
  margin: 0.3rem 0.5rem;
  cursor: pointer;
- border: 2px solid orange;
- border-radius: 50%;
- padding: 0.6rem;
- font-size: 0.9rem;
- color:rgb(210, 66, 30);
- font-size: 0.3rem;
+ color:rgb(0, 0, 0);
+ font-size: 0.7rem;
+ border-radius: 100%;
+ background-color: rgb(255, 255, 255);
+ width: 8%;
+ padding: 5px;
+ font-size: 0.8rem;
+
+
  
  }
  
  .checkboxer label{
-     width: 12rem;
+     width: 60%;
      font-weight: 900;
      word-wrap: break-word;
+     color: aliceblue;
  
  }
  .checkboxer img{
  
      position: absolute;
-     right: -2rem;
+     right: -10%;
      border: none;
      border-radius: 0 1rem 0 ;
      cursor: pointer;
@@ -109,39 +119,61 @@ align-items: center;
  }
  .complated{
      text-decoration: line-through;
-     color: rgb(174, 0, 255);
+     color: rgb(65, 57, 68);
      transform: rotateY(-360deg);
      transition: .5s;
  }
  .changed1{
-     background-color: rgba(153, 0, 255,0.4);
-     transition: background-color 2s;
+     background-color:aliceblue;
+     transition: background-color 3s;
      cursor: pointer;
 
  }
- .changed2{
- 
+ .changed2{ 
  display: none; 
  }
  .changed3{
   
-    left: 30rem ;
-    transition:left 1s;
+    left: 42%;
+    background-color: rgb(110, 176, 235);
+    transition: left  1.5s;
 
  }
- .changed4{
-  
-    left: 50rem ;
+ .changed4{  
+    left: 72%;
     transition:left 1s;
+    background-color:forestgreen;
 
  }
  .two{
     margin: 0.3rem 0.5rem;
     cursor: pointer;
-    border: 2px solid orange;
-    border-radius: 50%;
-    padding: 0.6rem;
-    font-size: 0.9rem;
-    color:rgb(210, 66, 30);
+    border-radius: 100%;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 8%;
+    padding: 5px;
+    font-size: 0.8rem;
+   
  }
+ .dates{
+     position: absolute;
+     left: 1%;
+     top:110%;
+     font-weight: 700;
+     letter-spacing: 0.1rem;
+     font-size: 0.8rem;
+     color:brown;
+
+ }
+ .dates2{
+    position: absolute;
+    left: 55%;
+    top:110%;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color:brown;
+
+}
+
 
